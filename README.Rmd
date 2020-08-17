@@ -1,10 +1,8 @@
 ---
-title: "Intro to Git and GitHub"
-author: "Daniel Hocking"
-output: 
-  html_document: 
-    keep_md: yes
+output: github_document
 ---
+
+# Intro to Git and GitHub
 
 This is a very brief introduction to the program [git](https://git-scm.com/) and the associated [GitHub](https://github.com/) website. The intent of this is to provide a walk through with code you should try while getting familiar with this software and the start of a workflow. git is incredibly powerful but complex software. There are tons of great resources but it's often difficult to get started. [Happy Git and GitHub for the useR](https://happygitwithr.com/) by Jenny Bryan is a fantastic and much more throrough *introduction*, but still just the tip of the iceberg.
 
