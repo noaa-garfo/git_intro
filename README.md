@@ -1,4 +1,6 @@
 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 # Intro to Git and GitHub
 
 This is a very brief introduction to the program
