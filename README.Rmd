@@ -102,6 +102,8 @@ The origin is the name of the default connection to the remote repository you se
 git remote -v
 ```
 
+**Workflow Note: Always do a pull when starting to work on something. If you make changes without pulling in the current ones on GitHub it can lead to merge conflicts and even the dreaded detached head state.**
+
 ## GitHub Issues
 
 GitHub issues are a great way to keep track of decisions you make and things you try or want to try. Go to the GitHub repo, click on issues, and create a new issue. Call it `fastjoin` and write a message about wanting to test a faster way to join tables.
@@ -145,12 +147,12 @@ git checkout master
 If you look in your file explorer and using `ls -alF` you will see that `file2.txt` is missing. That is because it only exists in the parallel universe of the `fastjoin` branch. Let's merge them now
 
 ```
-git merge fastjoin
+git merge --no-ff fastjoin
 ```
 
 **Note** - you may have to do a commit message for this and in many command line systems it brings up vi or vim or something without instructions for saving/exiting. In mine (Windows 10, git bash command line) I type `:x` to exit.
 
-Now `ls` and your file explorer (after refreshing) will show both files. At this point it's only local and not on GitHub. Use 
+The flag`--no-ff` stands for no fast forward and avoids losing information about the previous existence of a branch. It's not required but keeps the history and can allow for some easier backtracking if necessary. Now `ls` and your file explorer (after refreshing) will show both files. At this point it's only local and not on GitHub. Use 
 
 ```
 git push origin master
